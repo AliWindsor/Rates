@@ -13,8 +13,10 @@ struct RatesApp: App {
 
     var body: some Scene {
         WindowGroup {
+           /* CoreDataContentView()
+                .environment(\.managedObjectContext, persistenceController.container.viewContext)*/
+            
             ContentView()
-                .environment(\.managedObjectContext, persistenceController.container.viewContext)
         }
     }
 }
